@@ -21,7 +21,7 @@ const Header = () => {
                 <a href='#section1' className='font-bold cursor-pointer'>OUR PACKAGE</a>
                 <a href='#section3' className='font-bold cursor-pointer'>YOUR FREE RESOURCE</a>
             </div>
-            <div className='w-1/3 flex border border-black justify-center select-none'>
+            <div className='w-1/3 flex border border-black justify-center select-none'>   
                 <img src='../static/images/logo.jpg' className='lg:w-32 border border-black cursor-pointer'></img>
             </div>
             <div className='w-1/3 flex border border-black justify-around items-center'>
