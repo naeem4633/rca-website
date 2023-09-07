@@ -16,7 +16,7 @@ const Home = () => {
     <>
     <section className='mx-auto w-full min-h-[90vh] py-10 lg:py-20 relative color-secondary text-gray-200 bg-[#08080d] space-y-10 lg:space-y-20 tracking-wider'>
       <div className='mx-auto flex w-4/5 2xl:w-3/4 h-3/4 flex-col relative z-10 space-y-6 lg:space-y-12'>
-        <p className='text-xl lg:text-3xl company-name tracking-tight'>ROCKY CONTRACTOR AGENCY</p>
+        <h1 className='text-xl lg:text-3xl comh1any-name tracking-tight'>ROCKY CONTRACTOR AGENCY</h1>
         <div className='flex space-x-4'>
           <p className='font-bold text-3xl lg:text-7xl'><span className='bg-gradient-text'>Level Up </span>Your Online Game</p>
         </div>
@@ -25,15 +25,15 @@ const Home = () => {
         </div>
       </div>
       <div className='mx-auto w-4/5 2xl:w-3/4 grid grid-cols-1 lg:grid-cols-2 h-3/4 flex-col relative rounded-lg select-none'>
-        <img className='w-full h-full border-2 border-black lg:border-0' src='../static/images/image-3.jpg'></img>
-        <img className='w-full h-full border-2 border-black lg:border-0' src='../static/images/image-1.jpg'></img>
-        <img className='hidden lg:block w-full h-full' src='../static/images/image-2.jpg'></img>
-        <img className='hidden lg:block w-full h-full' src='../static/images/image-4.jpg'></img>
+        <img className='w-full h-full border-2 border-black lg:border-0' src='../static/images/plumbing-web-developer.jpg'></img>
+        <img className='w-full h-full border-2 border-black lg:border-0' src='../static/images/plumbing-website.jpg'></img>
+        <img className='hidden lg:block w-full h-full' src='../static/images/plumbing-developer-agency.jpg'></img>
+        <img className='hidden lg:block w-full h-full' src='../static/images/plumbing-agency.jpg'></img>
       </div>
     </section>
 
     <section id='section1' className='mx-auto w-full min-h-[80vh] flex flex-col justify-center items-center space-y-6 lg:space-y-12 py-10 lg:py-20 px-2 lg:px-0 tracking-wide'>
-      <p className='text-center text-2xl lg:text-4xl font-semibold'>Our Service</p>
+      <h2 className='text-center text-2xl lg:text-4xl font-semibold'>Our Service</h2>
       <div className='w-full lg:w-3/4 2xl:w-1/2 outline outline-[#00C9FF] rounded py-6 space-y-4'>
         <div className='w-full flex items-center justify-center space-x-4 animate-breathe'>
           <img className='w-8' src='../static/images/100.png'></img>
@@ -47,7 +47,7 @@ const Home = () => {
             <div className='flex flex-col space-y-6'>
               <div className='flex space-x-4 items-center first-group'>
                 <img className='w-5 lg:w-6' src='../static/images/web-design.png'></img>
-                <h2 className='text-sm lg:text-2xl font-semibold'>Crafting Your Website: Design to Deployment</h2>
+                <h3 className='text-sm lg:text-2xl font-semibold'>Crafting Your Website: Design to Deployment</h3>
               </div>
               <ul className='space-y-2'>
                 <li className='flex space-x-4 items-center first-group'>
@@ -72,7 +72,7 @@ const Home = () => {
             <div className='flex flex-col space-y-6'>
               <div className='flex space-x-4 items-center first-group'>
                 <img className='w-6 lg:w-7' src='../static/images/seo.png'></img>
-                <h2 className='text-sm lg:text-2xl font-semibold'>Content Creation, SEO Mastery, Google My Business Optimization, and Responsive Design</h2>
+                <h3 className='text-sm lg:text-2xl font-semibold'>Content Creation, SEO Mastery, Google My Business Optimization, and Responsive Design</h3>
               </div>
               <ul className='space-y-2'>
                 <li className='flex space-x-4 items-center first-group'>
@@ -106,7 +106,7 @@ const Home = () => {
               <img className='w-full h-full object-cover' src='../static/images/logo.jpg'></img>
             </div>
             <div className='w-full lg:w-3/4 mx-auto flex flex-col justify-between items-center lg:items-start space-y-8 text-left relative z-10'>
-              <p className='text-2xl lg:text-5xl font-bold'>Why Choose Us ?</p>
+              <h2 className='text-2xl lg:text-5xl font-bold'>Why Choose Us ?</h2>
               <p className='text-sm lg:text-2xl'>
                 We specialize in providing plumbing businesses a seamless <span className='text-[#00C9FF]'>end-to-end</span> web development solution, ensuring your strong online presence
               </p>
@@ -128,13 +128,13 @@ const Home = () => {
         </div>
 
         <div className='w-full lg:w-3/4 2xl:w-1/2 bg-[#08080d] flex flex-col items-center justify-center lg:border-2 border-white rounded-lg p-4 lg:p-8 space-y-6 lg:px-0 lg:mx-auto'>
-          <p className='text-center text-2xl lg:text-4xl font-semibold'>The Best Part ?</p>
+          <h2 className='text-center text-2xl lg:text-4xl font-semibold'>The Best Part ?</h2>
           <div className='w-full space-y-2 lg:space-y-6 flex flex-col items-center justify-center text-sm lg:text-2xl'>
             <div className='flex flex-col items-center space-y-4 border border-black'>
               <p className='text-center lg:text-left'>We offer a <span className='text-[#00C9FF] font-bold'>100% Money Back</span> guarantee on our work</p>
               <p className='font-semibold text-xs lg:text-xl'>Zero Risk On You</p>
               <div className=''>
-                <img className='w-52' src='../static/images/money-back.png'></img>
+                <img className='w-52' src='../static/images/plumbing-web-development-agency.png'></img>
               </div>
             </div>
             <div className='space-y-4 flex flex-col items-center'>
@@ -157,11 +157,11 @@ const Home = () => {
     <section id='section3' className='mx-auto w-full min-h-[70vh] flex flex-col justify-start items-center space-y-10 tracking-wider px-4'>
       <div className='flex items-center space-x-3'>
         <img className='w-6 lg:w-8' src='../static/images/ebook.png'></img>
-        <p className='text-center text-xl lg:text-4xl font-semibold'>Your Free E-book...</p>
+        <h2 className='text-center text-xl lg:text-4xl font-semibold'>Your Free E-book...</h2>
       </div>
       <div className='w-full lg:w-3/4 2xl:w-1/2 flex flex-col text-base lg:text-xl space-y-10'>
         <div className='space-y-4 outline outline-[#00C9FF] rounded-lg p-8'>
-          <p className='font-semibold text-gray-600'>CONTENTS</p>
+          <h3 className='font-semibold text-gray-600'>CONTENTS</h3>
           <div className='flex flex-col space-y-4'>
             <ul className='space-y-4 text-gray-600'>
               <li className='flex flex-row space-x-4 items-baseline first-group'>
@@ -191,7 +191,7 @@ const Home = () => {
       </div>
       <div className='flex space-x-0 lg:space-x-2 items-center'>
         <img className='w-6 lg:w-8' src='../static/images/unlocked.png'></img>
-        <p className='text-center text-base lg:text-2xl font-semibold'>Unlock the Secrets of Exceptional Plumbing Website Design !</p>
+        <h3 className='text-center text-base lg:text-2xl font-semibold'>Unlock the Secrets of Exceptional Plumbing Website Design !</h3>
       </div>
       <div className='flex flex-col items-center space-y-2 bg-gray-300 p-3'>
         <div className='flex space-x-2 items-center p-1'>

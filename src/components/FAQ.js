@@ -19,7 +19,7 @@ function FAQ() {
     <>
     <section className='mx-auto w-full min-h-[40vh] flex justify-center items-center py-10 lg:py-20 space-x-4 bg-[#08080d] text-gray-200 tracking-wider'>
       <div className='mx-auto w-4/5 lg:w-2/3 2xl:w-2/5 space-y-20 lg:space-y-20'>
-        <p className='text-xl lg:text-5xl font-bold'>Frequently Asked Questions</p>
+        <h2 className='text-xl lg:text-5xl font-bold'>Frequently Asked Questions</h2>
         <ul className='text-xs lg:text-xl space-y-6 lg:space-y-12'>
           {questions.map((question, index) => (
             <li className={`space-y-4 lg:space-y-8 ${isOpen[index] ? 'open' : ''}`} key={index}>
