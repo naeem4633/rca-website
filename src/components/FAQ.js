@@ -17,7 +17,7 @@ function FAQ() {
 
   return (
     <>
-    <section className='mx-auto w-full min-h-[40vh] flex justify-center items-center py-10 lg:py-20 space-x-4 bg-[#08080d] text-gray-200 tracking-wider'>
+    <section className='mx-auto w-full min-h-[45vh] flex justify-center items-center py-10 lg:py-20 space-x-4 bg-[#08080d] text-gray-200 tracking-wider'>
       <div className='mx-auto w-4/5 lg:w-2/3 2xl:w-2/5 space-y-20 lg:space-y-20'>
         <h2 className='text-xl lg:text-5xl font-bold'>Frequently Asked Questions</h2>
         <ul className='text-xs lg:text-xl space-y-6 lg:space-y-12'>
@@ -54,12 +54,12 @@ function FAQ() {
             </li>
           ))}
         </ul>
-        <div onClick={openPopup} className='mx-auto w-fit bg-[#00C9FF] rounded-md text-black font-semibold px-4 py-2 text-lg tracking-wide flex items-center space-x-4 cursor-pointer group transition-transform duration-200 hover:translate-y-1 select-none'>
+        {/* <div onClick={openPopup} className='mx-auto w-fit bg-[#00C9FF] rounded-md text-black font-light px-4 py-2 text-lg tracking-wide flex items-center space-x-4 cursor-pointer group transition-all duration-200 hover:bg-sky-500 select-none'>
             <p className='text-xs lg:text-lg'>Schedule a Meeting</p>   
             <svg className="w-3 lg:w-4 h-3 lg:h-4 stroke-black group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>  
-        </div>
+        </div> */}
       </div>
     </section>
 

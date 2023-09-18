@@ -17,9 +17,9 @@ const Header = () => {
     <>
     <section className='hidden lg:block top-0 w-full h-full text-white color-secondary py-6 tracking-wider'>
         <div className='mx-auto w-full flex justify-between space-x-4 items-center'>
-            <div className='w-1/3 flex border border-black justify-around'>
+            <div className='w-1/3 flex border border-black justify-around items-center'>
                 <a href='#section1' className='font-bold cursor-pointer'>OUR PACKAGE</a>
-                <a href='#section3' className='font-bold cursor-pointer'>YOUR FREE RESOURCE</a>
+                <a href='#section3' className='font-bold cursor-pointer'>YOUR FREE WEBSITE !</a>
             </div>
             <div className='w-1/3 flex border border-black justify-center select-none'>   
                 <img src='../static/images/logo.jpg' className='lg:w-32 border border-black cursor-pointer'></img>
@@ -48,9 +48,9 @@ const Header = () => {
           </div>
           <ul className='w-full flex flex-col p-8 text-sm'>
             <a onClick={toggleMenu} href='#section1' className='p-4 border border-t-0 border-gray-400 border-x-0'>OUR PACKAGE</a>
-            <a onClick={toggleMenu} href='#section3' className='p-4 border border-t-0 border-gray-400 border-x-0'>YOUR FREE RESOURCE</a>
+            <a onClick={toggleMenu} href='#section3' className='p-4 border border-t-0 border-gray-400 border-x-0'>YOUR FREE WEBSITE !</a>
             <a onClick={toggleMenu} href='#section2' className='p-4 border border-t-0 border-gray-400 border-x-0'>WHY CHOOSE US ?</a>
-            <a onClick={toggleMenu} className='p-4 border border-gray-400 border-x-0 border-t-0 font-semibold text-[#00C9FF]'>SCHEDULE A MEETING</a>
+            <a onClick={() => { toggleMenu(); openPopup(); }} className='p-4 border border-gray-400 border-x-0 border-t-0 font-semibold text-[#00C9FF]'>SCHEDULE A MEETING</a>
           </ul>
         </div>
         <div className='flex flex-col justify-center items-center space-y-4'>

@@ -24,6 +24,10 @@
   opacity: 0;
 }
 
+.bold-font{
+  font-family: 'Heebo', sans-serif;
+}
+
 .answer.open {
   max-height: 100px; /* Adjust this value as needed */
   opacity: 1;

@@ -5,7 +5,7 @@ import {addDoc, collection} from '@firebase/firestore';
 
 const Popup = ({ isOpen, onClose }) => {
     const [customerName, setCustomerName] = useState('');
-    const [companyName, setCompanyName] = useState('');
+    // const [companyName, setCompanyName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [alertMessage, setAlertMessage] = useState('');
 
@@ -16,9 +16,9 @@ const Popup = ({ isOpen, onClose }) => {
       setCustomerName(e.target.value);
     };
   
-    const handleCompanyNameChange = (e) => {
-      setCompanyName(e.target.value);
-    };
+    // const handleCompanyNameChange = (e) => {
+    //   setCompanyName(e.target.value);
+    // };
   
     const handleEmailAddressChange = (e) => {
       setEmailAddress(e.target.value);
@@ -32,7 +32,11 @@ const Popup = ({ isOpen, onClose }) => {
 
     const handleMeetingButtonClick = () => {
         // Check if the required fields are not empty
-        if (customerName.trim() === '' || companyName.trim() === '' || emailAddress.trim() === '') {
+        // if (customerName.trim() === '' || companyName.trim() === '' || emailAddress.trim() === '') {
+        //     setAlertMessage('Please fill out all required fields.');
+        //     return;
+        // }
+        if (customerName.trim() === '' || emailAddress.trim() === '') {
             setAlertMessage('Please fill out all required fields.');
             return;
         }
@@ -41,7 +45,8 @@ const Popup = ({ isOpen, onClose }) => {
         // For example, here we are using Firestore to add data
         const data = {
             customerName: customerName,
-            companyName: companyName,
+            // companyName: companyName,
+            companyName: '',
             emailAddress: emailAddress,
         };
     
@@ -89,7 +94,7 @@ const Popup = ({ isOpen, onClose }) => {
             <div className='w-full flex justify-end'>
                 <img onClick={onClose} className='w-6 cursor-pointer' src='../static/images/close-button.png'></img>
             </div>
-            <div className='space-y-4 p-0 lg:p-8'>
+            <div className='space-y-10 p-0 lg:p-8'>
                 <h2>Please fill out the following details.</h2>
                 {alertMessage && (
                     <div className="text-red-500 font-semibold text-xs lg:text-sm">{alertMessage}</div>
@@ -101,12 +106,12 @@ const Popup = ({ isOpen, onClose }) => {
                         </label>
                         <input type="text" id="customerName" name="customerName" value={customerName} onChange={handleCustomerNameChange} className="mt-1 p-2 border rounded-md w-full text-black"/>
                     </div>
-                    <div className="mb-4 space-y-2">
+                    {/* <div className="mb-4 space-y-2">
                         <label htmlFor="companyName" className="block text-xs lg:text-sm font-medium text-gray-200">
                             Your company name *
                         </label>
                         <input type="text" id="companyName" name="companyName" value={companyName} onChange={handleCompanyNameChange} className="mt-1 p-2 border rounded-md w-full text-black"/>
-                    </div>
+                    </div> */}
                     <div className="mb-4 space-y-2">
                         <label htmlFor="emailAddress" className="block text-xs lg:text-sm font-medium text-gray-200">
                             Your email address *
@@ -118,7 +123,7 @@ const Popup = ({ isOpen, onClose }) => {
                     </div>
                     <div className="text-center flex justify-center">
                         <button type="button" onClick={handleMeetingButtonClick} className="mt-2 p-2 border border-transparent text-xs lg:text-sm rounded-md text-black bg-[#00C9FF] hover:bg-opacity-75 transition-all duration-200 flex space-x-2 items-center">
-                        <p>Set Meeting Time</p>
+                        <p>Set Meeting Time on Credly</p>
                         <img className='w-4' src='../static/images/share.png'></img>
                         </button>
                     </div>
