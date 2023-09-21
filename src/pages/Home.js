@@ -31,7 +31,7 @@ const Home = () => {
 
     <section id='section1' className='mx-auto w-full min-h-[100vh] flex flex-col justify-center items-center space-y-6 lg:space-y-12 py-10 lg:py-20 px-2 lg:px-0 tracking-wide'>
       <h2 className='text-center text-xl lg:text-4xl font-semibold'>All Inclusive Service</h2>
-      <div className='w-full 2xl:w-3/4 flex flex-col items-center justify-center mx-auto space-y-3 lg:space-y-8'>
+      <div className='w-full 2xl:w-3/4 flex flex-col items-center justify-center mx-auto space-y-3 lg:space-y-8 px-8 2xl:px-0'>
         <div className='w-full flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-8 items-center justify-center'>
           <div className='w-4/5 lg:w-1/3 flex flex-col space-y-2 p-4 lg:p-6 justify-center items-center bg-white border rounded-lg text-black hover:drop-shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer select-none'>
             <img className='w-8 h-8 lg:w-12 lg:h-12' src='../static/images/illustration.png' alt=''></img>
@@ -78,13 +78,13 @@ const Home = () => {
 
     <section className='mx-auto w-full min-h-[100vh] flex justify-center items-center py-10 lg:py-20 space-x-4 tracking-wider'>
       <div id='section2' className='flex flex-col w-full h-full bg-[#08080d] justify-center text-gray-200 py-10 lg:py-20 space-y-32 px-8'>
-        <div className='w-full lg:w-3/5 mx-auto flex flex-col lg:flex-row text-base lg:text-2xl justify-between space-y-10 lg:space-y-0 lg:space-x-20'>
+        <div className='w-full lg:w-3/5 mx-auto flex flex-col lg:flex-row text-base lg:text-xl 2xl:text-2xl justify-between space-y-10 lg:space-y-0 lg:space-x-20'>
           <div className='w-full lg:w-1/2 mx-auto flex flex-col items-center space-y-5 lg:space-y-10'>
-            <p className='font-semibold text-xl lg:text-5xl'>Does This Sound Like You ?</p>
+            <p className='font-semibold text-xl lg:text-4xl 2xl:text-5xl'>Does This Sound Like You ?</p>
             <ul className='space-y-3 lg:space-y-6'>
               <li className='flex space-x-4 items-start'>
                 <img className='w-6 h-6 lg:w-8 lg:h-8' src='../static/images/bullet.png'></img>
-                <p>Your website is not bringing in any results?</p>
+                <p>Your current website is not bringing in any results?</p>
               </li>
               <li className='flex space-x-4 items-start'>
                 <img className='w-6 h-6 lg:w-8 lg:h-8' src='../static/images/bullet.png'></img>
@@ -97,7 +97,7 @@ const Home = () => {
             </ul>
           </div>
           <div className='w-full lg:w-1/2 mx-auto flex flex-col items-center space-y-5 lg:space-y-10'>
-            <p className='font-semibold text-xl lg:text-5xl text-center'>Well It's Your Lucky Day !</p>
+            <p className='font-semibold text-xl lg:text-4xl 2xl:text-5xl text-center'>Well It's Your Lucky Day !</p>
             <ul className='space-y-3 lg:space-y-6'>
               <li className='flex space-x-4 items-start'>
                 <img className='w-6 h-6 lg:w-8 lg:h-8' src='../static/images/star.png'></img>
@@ -118,27 +118,27 @@ const Home = () => {
           <p className='font-semibold text-xl lg:text-5xl'>Best Of All ?</p>
           <ul className='flex flex-col space-y-3 lg:space-y-6'>
             <li className='mx-auto w-full lg:w-3/4 flex flex-col space-y-2'>
-              <p className='text-lg lg:text-3xl'>We are the only contractors in the plumbing space to offer a 100% money back guarantee.</p>
+              <p className='text-lg lg:text-2xl 2xl:text-3xl'>We are the only contractors in the plumbing space to offer a 100% money back guarantee.</p>
               <p className='text-xs lg:text-lg'>No Risk On You.</p>
             </li>
             <li className=''>
               <div className='mx-auto w-4/5 lg:w-2/5 bg-gray-100 rounded flex flex-col text-white p-2 lg:p-5'>
                 <div className='flex justify-end space-x-1'>
-                  <img className='w-4 h-4 lg:w-8 lg:h-8' src='../static/images/star-black.png'></img>
-                  <img className='w-4 h-4 lg:w-8 lg:h-8' src='../static/images/star-black.png'></img>
-                  <img className='w-4 h-4 lg:w-8 lg:h-8' src='../static/images/star-black.png'></img>
-                  <img className='w-4 h-4 lg:w-8 lg:h-8' src='../static/images/star-black.png'></img>
-                  <img className='w-4 h-4 lg:w-8 lg:h-8' src='../static/images/star-black.png'></img>
+                  <img className='w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8' src='../static/images/star-black.png'></img>
+                  <img className='w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8' src='../static/images/star-black.png'></img>
+                  <img className='w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8' src='../static/images/star-black.png'></img>
+                  <img className='w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8' src='../static/images/star-black.png'></img>
+                  <img className='w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8' src='../static/images/star-black.png'></img>
                 </div>
                 <div className='w-full flex flex-col space-y-0 lg:space-y-2 text-black items-start'>
-                  <p className='bold-font font-bold text-xl lg:text-5xl'>100%</p>
-                  <p className='bold-font font-bold text-xl lg:text-5xl'>SATISFACTION</p>
-                  <p className='bold-font text-xl lg:text-4xl'>GUARANTEED</p>
+                  <p className='bold-font font-bold text-xl lg:text-3xl 2xl:text-5xl'>100%</p>
+                  <p className='bold-font font-bold text-xl lg:text-3xl 2xl:text-5xl'>SATISFACTION</p>
+                  <p className='bold-font text-xl lg:text-2xl 2xl:text-4xl'>GUARANTEED</p>
                 </div>
               </div>
             </li>
             <li className=''>
-              <p className='text-lg lg:text-3xl'>Ready To Lead the Plumbing Industry?</p>
+              <p className='text-lg lg:text-2xl 2xl:text-3xl'>Ready To Lead the Plumbing Industry?</p>
             </li>
           </ul>
           <div onClick={openPopup} className='mx-auto w-fit bg-[#00C9FF] rounded-md text-black font-light px-4 py-2 text-lg tracking-wide flex items-center space-x-4 cursor-pointer group transition-all duration-200 hover:bg-sky-500 select-none'>
