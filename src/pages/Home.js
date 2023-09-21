@@ -15,14 +15,16 @@ const Home = () => {
   return (
     <>
     <section className='mx-auto w-full min-h-[90vh] py-10 lg:py-20 relative color-secondary text-gray-200 bg-[#08080d] space-y-10 lg:space-y-20 tracking-wider'>
-      <div className='mx-auto flex 2xl:w-3/4 h-3/4 flex-col relative z-10 space-y-10 lg:space-y-20 text-center'>
+      <div className='mx-auto flex 2xl:w-3/4 h-3/4 flex-col relative z-10 space-y-20 text-center'>
         <h1 className='text-xl lg:text-3xl company-name tracking-tight'>ROCKY CONTRACTOR AGENCY</h1>
         <div className='hidden lg:flex flex-col space-y-4 text-left lg:text-center'>
           <p className='font-bold text-5xl'>We design websites for Plumbing Businesses</p>
           <p className='font-bold text-5xl'> that turn <span className='bg-gradient-text-light'>visitors into customers</span></p>
         </div>
-        <div className='lg:hidden flex flex-col space-y-4 text-center px-1'>
-          <p className='text-lg'>We design websites for Plumbing Businesses that turn <span className='font-bold bg-gradient-text-light'>visitors into customers</span></p>
+        <div className='lg:hidden flex flex-col text-center text-xl'>
+          <p className=''>We design websites</p>
+          <p className=''>for Plumbing Businesses</p>
+          <p className=''>that turn <span className='font-bold bg-gradient-text-light'>visitors into customers</span></p>
         </div>
       </div>
     </section>
