@@ -76,7 +76,7 @@ const Home = () => {
       </div>
     </section>
 
-    <section className='mx-auto w-full min-h-[100vh] flex justify-center items-center py-10 lg:py-20 space-x-4 tracking-wider'>
+    <section className='mx-auto w-full min-h-[100vh] flex justify-center items-center space-x-4 tracking-wider'>
       <div id='section2' className='flex flex-col w-full h-full bg-[#08080d] justify-center text-gray-200 py-10 lg:py-20 space-y-32 px-8'>
         <div className='w-full lg:w-3/5 mx-auto flex flex-col lg:flex-row text-base lg:text-xl 2xl:text-2xl justify-between space-y-10 lg:space-y-0 lg:space-x-20'>
           <div className='w-full lg:w-1/2 mx-auto flex flex-col items-center space-y-5 lg:space-y-10'>
@@ -114,8 +114,8 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className='mx-auto w-full lg:w-3/5 flex flex-col text-center space-y-5 lg:space-y-10'>
-          <p className='font-semibold text-xl lg:text-5xl'>Best Of All ?</p>
+        <div className='mx-auto w-full lg:w-3/5 text-center flex flex-col space-y-5 lg:space-y-10 items-start'>
+          <p className='font-semibold text-xl lg:text-5xl mx-auto'>Best Of All ?</p>
           <ul className='flex flex-col space-y-3 lg:space-y-6'>
             <li className='mx-auto w-full lg:w-3/4 flex flex-col space-y-2'>
               <p className='text-lg lg:text-2xl 2xl:text-3xl'>We are the only contractors in the plumbing space to offer a 100% money back guarantee.</p>
@@ -148,43 +148,10 @@ const Home = () => {
             </svg>  
           </div>
         </div>
+        <FAQ />
       </div>
     </section>
 
-    <section id='section3' className='mx-auto w-full min-h-[100vh] flex flex-col justify-center items-center space-y-10 tracking-wider px-4 pb-10 lg:pb-20'>
-      <div className='flex items-center space-x-3'>
-        <img className='w-6 h-6 lg:w-10 lg:h-10 select-none' src='../static/images/discount.png'></img>
-        <h2 className='text-center text-xl lg:text-4xl font-semibold'>Limited Time Offer !</h2>
-      </div>
-      <div className='w-full lg:w-3/4 flex flex-col text-base lg:text-xl space-y-10'>
-        <div className='w-full flex flex-col lg:flex-row lg:text-2xl'>
-          <div className='w-full lg:w-1/2 p-2 lg:p-8 select-none'>
-            <img className='w-full' src='../static/images/web-design.jpg'></img>
-          </div>
-          <div className='w-full lg:w-1/2 p-2 lg:p-8 flex flex-col justify-between space-y-12 lg:space-y-0'>
-            <div className='flex flex-col text-black space-y-4 text-base lg:text-2xl'>
-              <p>We are offering <span className='font-bold'>5 free websites</span> as part of our expansion into the plumbing space.</p>
-              <p>You don't have to pay for anything, just buy web hosting services or use your existing ones !</p>
-            </div>
-            <div className='lg:font-semibold flex flex-col space-y-6'>   
-              <div className='flex space-x-2 items-center'>        
-                <p className='w-full lg:w-3/4 text-red-600 text-xs lg:text-sm'>We only have a limited number of positions for this offer. If you've been offered a slot, please book at the earliest.</p>
-              </div>
-              <div className='flex justify-start items-start w-full'>
-                <div onClick={openPopup} className='w-fit bg-[#00C9FF] rounded-md text-black font-light px-4 py-2 text-lg tracking-wide flex items-center space-x-4 cursor-pointer group transition-all duration-200 hover:bg-sky-500 select-none'>
-                  <p className='text-xs lg:text-lg'>Schedule a Meeting</p>   
-                  <svg className="w-3 lg:w-4 h-3 lg:h-4 stroke-black group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <FAQ />
     <ScrollToSection sectionId="section1" />
     <ScrollToSection sectionId="section2" />
     <ScrollToSection sectionId="section3" />
